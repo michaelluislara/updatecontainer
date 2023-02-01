@@ -38,7 +38,7 @@ print(df)
 
 df = df.rename(columns={0:"Postal Code",1:"Order Alert Status",2:"Event Name",3:"Event Type"})
 
-df.to_json("matches.csv")
+df.to_json("host/matches.csv")
 
 with open("downloadertracker.txt", "w") as file:
     file.write("ran at: "+str(datetime.datetime.today()))

@@ -1,1 +1,2 @@
-* * * * * /usr/local/bin/python downloader.py downloader.py
+*/15 * * * * /usr/local/bin/python downloader.py
+* * * * * /usr/local/bin/python test.py
