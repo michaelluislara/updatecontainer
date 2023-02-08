@@ -1,3 +1,3 @@
 #!/bin/bash
-service cron start
+# service cron start
 python downloader.py
