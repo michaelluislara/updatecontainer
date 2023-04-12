@@ -7,7 +7,7 @@ import datetime
 
 latlongs = pd.read_csv('PC.csv')
 
-geometry = [Point(xy) for xy in zip(latlongs.Longitude, latlongs.Latitude)]
+geometry = [Point(xy) for xy in zip(latlongs.LONGITUDE, latlongs.LATITUDE)]
 geoCases = gpd.GeoDataFrame(latlongs, crs = 'epsg:4326', geometry = geometry)
 geoCases = geoCases.reset_index(drop=True)
 
