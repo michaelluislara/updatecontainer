@@ -2,7 +2,7 @@ FROM python:bullseye
 COPY ../ .
 RUN pip install pandas
 RUN pip install shapely
-RUN pip install geopandas
+RUN pip install geopandas==0.11.0
 RUN pip install flask
 RUN pip install Flask-API
 RUN pip install gunicorn
