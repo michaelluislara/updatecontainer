@@ -18,7 +18,7 @@ with urllib.request.urlopen("https://services6.arcgis.com/ubm4tcTYICKBpist/ArcGI
 df = pd.DataFrame()
 
 for feature in js['features']:
-    polygon = shape(feature['geometry'])
+    polygon = shape(feature['geometry']).buffer(.005)
     print(feature['properties']['EVENT_NAME'])
     if polygon.geom_type == 'MultiPolygon':
         for geom in polygon.geoms:
