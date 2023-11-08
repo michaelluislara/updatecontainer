@@ -1,8 +1,8 @@
 FROM python:bullseye
 COPY ../ .
 RUN pip install pandas
-RUN pip install shapely
-RUN pip install geopandas==0.11.0
+# RUN pip install shapely
+RUN pip install geopandas
 RUN pip install gunicorn
 # RUN ["chmod", "+x", "commands.sh"]
 RUN ["chmod", "+x", "downloader.py"]
